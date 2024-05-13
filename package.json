@@ -13,6 +13,8 @@
 	},
 	"dependencies": {
 		"@biomejs/biome": "^1.7.3",
+		"mars3d": "^3.7.12",
+		"mars3d-cesium": "^1.117.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -21,11 +23,15 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
+		"@unocss/reset": "^0.60.2",
 		"@vitejs/plugin-react-swc": "^3.5.0",
 		"lint-staged": "^15.2.2",
+		"sass": "^1.77.1",
 		"simple-git-hooks": "^2.11.1",
 		"typescript": "^5.2.2",
-		"vite": "^5.2.0"
+		"unocss": "^0.60.2",
+		"vite": "^5.2.0",
+		"vite-plugin-mars3d": "^4.0.0"
 	},
 	"simple-git-hooks": {
 		"commit-msg": "npx --no-install commitlint -e",
