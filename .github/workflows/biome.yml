@@ -1,0 +1,18 @@
+name: Biome代码质量检查
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    quality:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: 设置Biome
+              uses: biomejs/setup-biome@v2
+              with:
+                  version: latest
+            - name: 运行Biome
+              run: biome ci .
